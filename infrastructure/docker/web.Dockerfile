@@ -26,7 +26,7 @@ ENV VITE_API_BASE_URL=${VITE_API_BASE_URL} VITE_DEV_LOGIN_ENABLED=${VITE_DEV_LOG
 RUN test -n "$VITE_API_BASE_URL" && npx turbo run build --filter=@dpp/web...
 
 # Runs as a non-root user and listens on 8080.
-FROM nginxinc/nginx-unprivileged:1.30.6-alpine3.24 AS runtime
+FROM nginxinc/nginx-unprivileged:1.31.7-alpine3.24 AS runtime
 # OS security fixes published since the base image was built (the CI scan fails on any fixable
 # HIGH/CRITICAL), then back to the image's unprivileged nginx user.
 USER 0
