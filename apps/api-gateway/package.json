@@ -20,7 +20,7 @@
     "@fastify/cors": "^11.3.1",
     "@fastify/helmet": "^13.2.0",
     "@fastify/rate-limit": "^11.2.1",
-    "@fastify/reply-from": "^12.7.1",
+    "@fastify/reply-from": "^12.8.0",
     "fastify": "^5.12.7",
     "ws": "^8.22.0",
     "zod": "^4.6.7"
